@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Yatri_Details">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:hint="યાત્રી વિગતો"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/yatri_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:hint="@string/યાત્રીનામ"/>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:hint="ઉંમર"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_margin="8dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/from_station"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:hint="સ્ટેશનથી"/>
+
+        <EditText
+            android:id="@+id/to_station"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:hint="સ્ટેશન સુધી"/>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:hint="વર્ણન"
+            />
+
+        <EditText
+            android:id="@+id/p_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:hint="મોબાઈલ નંબર"/>
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generateRecieptBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Generate Invoice"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

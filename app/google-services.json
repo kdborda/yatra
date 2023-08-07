@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1088502301965",
+    "project_id": "yatra-bc6c4",
+    "storage_bucket": "yatra-bc6c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088502301965:android:56eed839590325e3845c44",
+        "android_client_info": {
+          "package_name": "com.example.yatra_receipt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088502301965-oofqgdaovafum654ji89lg2nt3murod0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yatra_receipt",
+            "certificate_hash": "72cb3cf1a4b8829ee0365edf3ca262146d630124"
+          }
+        },
+        {
+          "client_id": "1088502301965-5v9vk2js2pijv4drhaoclsrfki1a6h46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6q97WOZ7y2UG3t4HqlWa0rykefi5ficM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088502301965-5v9vk2js2pijv4drhaoclsrfki1a6h46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
