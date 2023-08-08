@@ -229,6 +229,7 @@ public class AddUserDetails extends AppCompatActivity {
         nextBtn = findViewById(R.id.nextBtn);
         imageView = findViewById(R.id.imageView);
         uniqueId = UUID.randomUUID().toString();
+
     }
 
     // FUNCTION USED TO RETRIVE AND SET DATA AT THE EDITTEXT FIELD IF EDITING IS CLICKED.
@@ -297,12 +298,13 @@ public class AddUserDetails extends AppCompatActivity {
                 intent.putExtra("depo",Deposit);
                 intent.putExtra("baki",Baki);
                 intent.putExtra("svikarnar",Svikarnar);
+                intent.putExtra("id",dataIdRetrieved);
                 startActivity(intent);
 
                 // If new user data is being created then this code goes on.
                 if (nextBtn.getText().toString().equals("Generate Invoice")) {
-                    Realm.init(getApplicationContext());
-                    realm = Realm.getDefaultInstance();
+                        Realm.init(getApplicationContext());
+                        realm = Realm.getDefaultInstance();
 
                     if (editName.getText().toString().length() == 0 ||
                             editGam.getText().toString().length() == 0  ||
